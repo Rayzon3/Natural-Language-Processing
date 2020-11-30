@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Prediction</title>
+</head>
+<body>
+    {% if sentiment == 'Negative' %}
+        <h3>Sentiment : {{sentiment }} &#128533</h3>
+    {% elif sentiment == 'Positive' %}
+        <h3>Sentiment : {{sentiment }} &#128515</h3>
+    {% endif %}
+</body>
+</html>
