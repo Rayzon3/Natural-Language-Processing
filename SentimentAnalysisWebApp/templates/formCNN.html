@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style/form.css">
+</head>
+<body>
+    <div class="text_content">
+        <hr>
+        <h2>Enter the sentence to predict sentiment for:</h2>
+        <p>We'll use CNN model trained on 1.6 million tweets to predict the sentiment of your sentence.</p>
+        <p>Hope we are correct &#128578</p>
+        <hr>
+    </div>
+    <div class="box">
+        <form action="/sentiment_prediction_CNN" method="POST">
+        <div class="input-container">		
+            <label for="sentence"></label>
+            <input type="text" required="" name="sentence" aria-rowcount="3"/>
+            <label>Enter Text</label>
+        </div>
+            <button type="submit" class="btn">Predict</button>
+    </form>	
+    </div>
+</body>
+</html>
